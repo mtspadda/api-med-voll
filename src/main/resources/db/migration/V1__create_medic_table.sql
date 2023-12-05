@@ -1,0 +1,11 @@
+CREATE TABLE medic (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    crm VARCHAR(200) NOT NULL,
+    speciality VARCHAR(100) NOT NULL,
+    street VARCHAR(100) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    zipCode VARCHAR(10) NOT NULL,
+    number BIGINT NOT NULL
+);
