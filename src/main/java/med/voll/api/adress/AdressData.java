@@ -1,4 +1,14 @@
 package med.voll.api.adress;
 
-public record AdressData(String street, String zipcode, String city, Integer number) {
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record AdressData(
+        @NotBlank
+        String street,
+        @NotNull
+        String zipcode,
+        @NotNull
+        String city,
+        Integer number) {
 }
