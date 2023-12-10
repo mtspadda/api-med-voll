@@ -40,4 +40,16 @@ public class Medic {
         this.adress = new Adress(data.adress());
         this.phone = data.phone();
     }
+
+    public void updateInfo(DataUpdateMedic dataUpdateMedic) {
+        if (dataUpdateMedic.name() != null){
+            this.name = dataUpdateMedic.name();
+        }
+        if (dataUpdateMedic.phoneNumber() != null){
+            this.phone = dataUpdateMedic.phoneNumber();
+        }
+        if (dataUpdateMedic.adressData() != null){
+            this.adress.updateAdress(dataUpdateMedic.adressData());
+        }
+    }
 }
