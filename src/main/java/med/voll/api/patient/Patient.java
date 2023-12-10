@@ -25,11 +25,23 @@ public class Patient {
     @Embedded
     private Adress adress;
 
+    private Boolean status;
+
 
     public Patient(PatientData data){
         this.name = data.name();
         this.phoneNumber = data.phoneNumber();
         this.adress = new Adress(data.adress());
+        this.status = true;
+    }
+
+    public void updatePatient(DataUpdatePatient dataUpdatePatient){
+        if (dataUpdatePatient.name() != null){
+            this.name = dataUpdatePatient.name();
+        }
+        if (dataUpdatePatient.phoneNumber() != null){
+            this.phoneNumber = dataUpdatePatient.phoneNumber();
+        }
     }
 
 }

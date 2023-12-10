@@ -31,6 +31,8 @@ public class Medic {
 
     private String phone;
 
+    private Boolean status;
+
 
     public Medic(MedicData data) {
         this.name = data.name();
@@ -51,5 +53,9 @@ public class Medic {
         if (dataUpdateMedic.adressData() != null){
             this.adress.updateAdress(dataUpdateMedic.adressData());
         }
+    }
+
+    public void delete() {
+        this.status = false;
     }
 }
