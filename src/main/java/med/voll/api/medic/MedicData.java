@@ -20,7 +20,10 @@ public record MedicData(
         Specialty specialty,
 
         @NotNull @Valid
-        AdressData adress
+        AdressData adress,
+
+        @NotBlank
+        String phone
 ) {
 
 

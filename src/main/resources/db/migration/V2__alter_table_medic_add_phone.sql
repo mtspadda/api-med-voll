@@ -1,0 +1,1 @@
+Alter table medic add phone varchar(20) not null;

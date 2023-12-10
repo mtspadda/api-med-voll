@@ -29,6 +29,8 @@ public class Medic {
     @Embedded
     private Adress adress;
 
+    private String phone;
+
 
     public Medic(MedicData data) {
         this.name = data.name();
@@ -36,5 +38,6 @@ public class Medic {
         this.crm = data.crm();
         this.specialty = data.specialty();
         this.adress = new Adress(data.adress());
+        this.phone = data.phone();
     }
 }
