@@ -17,7 +17,7 @@ public record MedicData(
         String crm,
 
         @NotNull
-        Specialty specialty,
+        Speciality speciality,
 
         @NotNull @Valid
         AdressData adress,
