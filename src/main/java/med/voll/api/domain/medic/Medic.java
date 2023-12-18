@@ -1,8 +1,8 @@
-package med.voll.api.medic;
+package med.voll.api.domain.medic;
 
 import jakarta.persistence.*;
 import lombok.*;
-import med.voll.api.adress.Adress;
+import med.voll.api.domain.adress.Adress;
 
 @Entity
 @Table(name = "medic")

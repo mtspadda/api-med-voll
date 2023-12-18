@@ -1,6 +1,6 @@
-package med.voll.api.patient;
+package med.voll.api.domain.patient;
 
-import med.voll.api.adress.AdressData;
+import med.voll.api.domain.adress.AdressData;
 
 import java.time.LocalDate;
 
