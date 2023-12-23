@@ -1,11 +1,11 @@
-package med.voll.api.medic;
+package med.voll.api.domain.medic;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
-import med.voll.api.adress.AdressData;
+import med.voll.api.domain.adress.AdressData;
 
 public record MedicData(
         @NotBlank // Only for strings
@@ -17,7 +17,7 @@ public record MedicData(
         String crm,
 
         @NotNull
-        Specialty specialty,
+        Speciality speciality,
 
         @NotNull @Valid
         AdressData adress,

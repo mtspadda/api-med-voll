@@ -1,8 +1,8 @@
-package med.voll.api.medic;
+package med.voll.api.domain.medic;
 
 import jakarta.persistence.*;
 import lombok.*;
-import med.voll.api.adress.Adress;
+import med.voll.api.domain.adress.Adress;
 
 @Entity
 @Table(name = "medic")
@@ -24,7 +24,7 @@ public class Medic {
     private String crm;
 
     @Enumerated(EnumType.STRING)
-    private Specialty specialty;
+    private Speciality speciality;
 
     @Embedded
     private Adress adress;
@@ -38,7 +38,7 @@ public class Medic {
         this.name = data.name();
         this.email = data.email();
         this.crm = data.crm();
-        this.specialty = data.specialty();
+        this.speciality = data.speciality();
         this.adress = new Adress(data.adress());
         this.phone = data.phone();
     }

@@ -1,6 +1,6 @@
-package med.voll.api.medic;
+package med.voll.api.domain.medic;
 
-public enum Specialty {
+public enum Speciality {
 
     ORTOPHEDICS,
     CARDIOLOGY,
